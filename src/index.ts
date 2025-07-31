@@ -32,7 +32,7 @@ export const aurora = new AuroraCore();
 /**
  * Initialize Aurora Core with default configuration
  */
-export async function initializeAurora(config?: Partial<ConsciousnessConfig>) {
+export async function initializeAurora(config?: Partial<import('./types').ConsciousnessConfig>) {
   return await aurora.initialize(config);
 }
 

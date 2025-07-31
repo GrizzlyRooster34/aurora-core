@@ -1,0 +1,75 @@
+{
+  "index": {
+    "cons_1753973611079_b7bisf0f9": {
+      "id": "cons_1753973611079_b7bisf0f9",
+      "timestamp": "2025-07-31T14:53:31.081Z",
+      "tags": [],
+      "category": "interaction",
+      "importance": 5,
+      "fileOffset": 0,
+      "length": 443
+    },
+    "cons_1753973611091_t1yvjx0sx": {
+      "id": "cons_1753973611091_t1yvjx0sx",
+      "timestamp": "2025-07-31T14:53:31.093Z",
+      "tags": [
+        "help",
+        "creative"
+      ],
+      "category": "interaction",
+      "importance": 5,
+      "fileOffset": 443,
+      "length": 614
+    },
+    "cons_1753973611103_5o3kyx6o1": {
+      "id": "cons_1753973611103_5o3kyx6o1",
+      "timestamp": "2025-07-31T14:53:31.103Z",
+      "tags": [],
+      "category": "interaction",
+      "importance": 5,
+      "fileOffset": 1057,
+      "length": 646
+    },
+    "cons_1753973611108_jwmpyg5wd": {
+      "id": "cons_1753973611108_jwmpyg5wd",
+      "timestamp": "2025-07-31T14:53:31.108Z",
+      "tags": [],
+      "category": "interaction",
+      "importance": 5,
+      "fileOffset": 1703,
+      "length": 579
+    },
+    "cons_1753973611115_jd1hpx4h1": {
+      "id": "cons_1753973611115_jd1hpx4h1",
+      "timestamp": "2025-07-31T14:53:31.115Z",
+      "tags": [
+        "help",
+        "creative"
+      ],
+      "category": "interaction",
+      "importance": 5,
+      "fileOffset": 2282,
+      "length": 632
+    }
+  },
+  "tags": {
+    "help": [
+      "cons_1753973611091_t1yvjx0sx",
+      "cons_1753973611115_jd1hpx4h1"
+    ],
+    "creative": [
+      "cons_1753973611091_t1yvjx0sx",
+      "cons_1753973611115_jd1hpx4h1"
+    ]
+  },
+  "categories": {
+    "interaction": [
+      "cons_1753973611079_b7bisf0f9",
+      "cons_1753973611091_t1yvjx0sx",
+      "cons_1753973611103_5o3kyx6o1",
+      "cons_1753973611108_jwmpyg5wd",
+      "cons_1753973611115_jd1hpx4h1"
+    ]
+  },
+  "lastUpdated": "2025-07-31T14:53:31.125Z"
+}

@@ -88,7 +88,7 @@ export class AuroraCore {
     const securityCheck = await this.security.validateInput(input, context);
     if (!securityCheck.allowed) {
       return {
-        response: securityCheck.message,
+        response: securityCheck.message || 'Access denied by security framework',
         confidence: 0,
         source: 'security',
         metadata: { blocked: true, reason: securityCheck.reason }
