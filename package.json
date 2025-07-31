@@ -1,0 +1,57 @@
+{
+  "name": "aurora-core",
+  "version": "1.0.0",
+  "description": "Universal AI Consciousness Framework - Advanced modular architecture for AI personality systems",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test-consciousness": "tsx examples/consciousness-test.ts",
+    "test-personality": "tsx examples/personality-test.ts",
+    "test-memory": "tsx examples/memory-test.ts",
+    "init": "tsx scripts/init-aurora.ts",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "ai",
+    "consciousness",
+    "personality",
+    "framework",
+    "modular",
+    "typescript",
+    "cross-platform",
+    "memory",
+    "tactical-variants",
+    "collective-intelligence"
+  ],
+  "author": "Aurora Core Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GrizzlyRooster34/aurora-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GrizzlyRooster34/aurora-core/issues"
+  },
+  "homepage": "https://github.com/GrizzlyRooster34/aurora-core#readme",
+  "dependencies": {
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
