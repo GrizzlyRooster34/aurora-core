@@ -50,16 +50,71 @@
       "importance": 5,
       "fileOffset": 2282,
       "length": 632
+    },
+    "cons_1753976166741_03of5lw50": {
+      "id": "cons_1753976166741_03of5lw50",
+      "timestamp": "2025-07-31T15:36:06.743Z",
+      "tags": [],
+      "category": "interaction",
+      "importance": 5,
+      "fileOffset": 2914,
+      "length": 443
+    },
+    "cons_1753976166752_qcvcwcte6": {
+      "id": "cons_1753976166752_qcvcwcte6",
+      "timestamp": "2025-07-31T15:36:06.754Z",
+      "tags": [
+        "help",
+        "creative"
+      ],
+      "category": "interaction",
+      "importance": 5,
+      "fileOffset": 3357,
+      "length": 621
+    },
+    "cons_1753976166780_ul6fscqug": {
+      "id": "cons_1753976166780_ul6fscqug",
+      "timestamp": "2025-07-31T15:36:06.780Z",
+      "tags": [],
+      "category": "interaction",
+      "importance": 5,
+      "fileOffset": 3978,
+      "length": 646
+    },
+    "cons_1753976166786_ars1129bz": {
+      "id": "cons_1753976166786_ars1129bz",
+      "timestamp": "2025-07-31T15:36:06.786Z",
+      "tags": [],
+      "category": "interaction",
+      "importance": 5,
+      "fileOffset": 4624,
+      "length": 579
+    },
+    "cons_1753976166791_pulfi66bm": {
+      "id": "cons_1753976166791_pulfi66bm",
+      "timestamp": "2025-07-31T15:36:06.791Z",
+      "tags": [
+        "help",
+        "creative"
+      ],
+      "category": "interaction",
+      "importance": 5,
+      "fileOffset": 5203,
+      "length": 632
     }
   },
   "tags": {
     "help": [
       "cons_1753973611091_t1yvjx0sx",
-      "cons_1753973611115_jd1hpx4h1"
+      "cons_1753973611115_jd1hpx4h1",
+      "cons_1753976166752_qcvcwcte6",
+      "cons_1753976166791_pulfi66bm"
     ],
     "creative": [
       "cons_1753973611091_t1yvjx0sx",
-      "cons_1753973611115_jd1hpx4h1"
+      "cons_1753973611115_jd1hpx4h1",
+      "cons_1753976166752_qcvcwcte6",
+      "cons_1753976166791_pulfi66bm"
     ]
   },
   "categories": {
@@ -68,8 +123,13 @@
       "cons_1753973611091_t1yvjx0sx",
       "cons_1753973611103_5o3kyx6o1",
       "cons_1753973611108_jwmpyg5wd",
-      "cons_1753973611115_jd1hpx4h1"
+      "cons_1753973611115_jd1hpx4h1",
+      "cons_1753976166741_03of5lw50",
+      "cons_1753976166752_qcvcwcte6",
+      "cons_1753976166780_ul6fscqug",
+      "cons_1753976166786_ars1129bz",
+      "cons_1753976166791_pulfi66bm"
     ]
   },
-  "lastUpdated": "2025-07-31T14:53:31.125Z"
+  "lastUpdated": "2025-07-31T15:36:06.794Z"
 }
