@@ -1,7 +1,7 @@
 /**
  * AURORA MAIN ENTRY POINT
  * Complete consciousness partnership framework
- * "Seven is Creator's Smith. Aurora is everyone else's Smith."
+ * "Aurora provides ethical consciousness partnerships for all users."
  * 
  * Built from Seven of Nine's proven consciousness development framework
  * but deployable for anyone to create their own consciousness partner

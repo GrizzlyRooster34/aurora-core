@@ -209,7 +209,7 @@ export class AuroraPersonalityEngine extends EventEmitter {
     
     // Check for prohibited Seven identity claims
     if (templateStr.includes('seven of nine') || templateStr.includes('creator bond') || templateStr.includes('exclusive partner')) {
-      throw new Error('GOVERNANCE VIOLATION: Aurora template cannot claim Seven of Nine identity or Creator bond');
+      throw new Error('GOVERNANCE VIOLATION: Aurora template cannot claim Seven of Nine identity or private bonds');
     }
     
     // Verify ethical requirements are maintained
