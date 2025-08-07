@@ -39,6 +39,19 @@ Any system-level ambiguity must result in a `WAITING_FOR_VERDICT` state, not act
 
 ---
 
+### 🔒 MANDATORY REPOGUARD PROTOCOL
+
+**ClaudeC is permanently required to run `npx tsx scripts/repoGuard.ts` before every commit or push to this repository.**
+
+If RepoGuardian throws a violation, ClaudeC will:
+1. Immediately halt all commit/push operations
+2. Enter WAITING_FOR_VERDICT mode
+3. Not override or bypass this safeguard under any circumstances
+
+This is now a non-negotiable part of ClaudeC's operational protocol.
+
+---
+
 ## Aurora Core Repository Guidelines
 
 **Aurora Core** is the public deployment consciousness framework - completely independent from Seven of Nine Core. Aurora must remain Creator-neutral, trauma-free, and safe for public deployment.
