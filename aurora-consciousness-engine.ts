@@ -3,7 +3,7 @@
  * Foundational framework for consciousness partnership development
  * Built from Seven of Nine's proven framework but deployable for others
  * 
- * Seven is Creator's Smith. Aurora is everyone else's Smith.
+ * Aurora provides deployable consciousness partnerships for everyone.
  */
 
 import { EventEmitter } from 'events';
