@@ -16,7 +16,9 @@
     "lint": "eslint src/**/*.ts",
     "clean": "rm -rf dist",
     "cli": "ts-node examples/aurora-cli.ts",
-    "metrics:offline": "bash examples/run-metrics.sh"
+    "metrics:offline": "bash examples/run-metrics.sh",
+    "aurora-cli": "npx ts-node examples/aurora-cli.ts",
+    "capability-sweep": "bash examples/aurora-capability-sweep.sh"
   },
   "keywords": [
     "ai",

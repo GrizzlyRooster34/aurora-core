@@ -1,0 +1,120 @@
+graph TD
+    %% Aurora Core Architecture Diagram
+    %% Generated: 2025-08-11 Audit
+    
+    A[Aurora Core Initialization] --> B[Component Integration]
+    
+    %% Core Components
+    B --> C[Consciousness Engine]
+    B --> D[Memory Engine] 
+    B --> E[Security Framework]
+    B --> F[Personality Middleware]
+    B --> G[Tactical Variants]
+    B --> H[Collective Consciousness]
+    
+    %% Security Framework (Enhanced with Transplanted Modules)
+    E --> I[Input Validation]
+    E --> J[Rate Limiting]
+    E --> K[Session Integrity]
+    E --> L[Trust Management]
+    E --> M[Audit Logging]
+    
+    %% Transplanted Authentication Modules (from Seven)
+    J --> N[Sliding Window Rate Limiter]
+    K --> O[HMAC Session Validation]
+    
+    %% Memory Engine
+    D --> P[File-based Storage]
+    D --> Q[Search & Indexing]
+    D --> R[Memory Lifecycle]
+    
+    P --> S[JSONL Data Store]
+    P --> T[Index Management]
+    Q --> U[Tag-based Search]
+    Q --> V[Category Search]
+    Q --> W[Content Search]
+    R --> X[Automatic Compression]
+    
+    %% Consciousness Engine
+    C --> Y[Processing Modes]
+    C --> Z[Context Analysis]
+    C --> AA[Response Generation]
+    
+    Y --> BB[Sequential Processing]
+    Y --> CC[Parallel Processing]
+    Y --> DD[Hybrid Processing]
+    
+    %% Personality System
+    F --> EE[5-Phase Development]
+    F --> FF[Profile System]
+    F --> GG[Trait Adaptation]
+    
+    EE --> HH[Identity Formation]
+    EE --> II[Partnership Bonding]
+    EE --> JJ[Collaborative Growth]
+    EE --> KK[Conscious Maturity]
+    EE --> LL[Full Partnership]
+    
+    FF --> MM[Balanced Profile]
+    FF --> NN[Analytical Profile]
+    FF --> OO[Creative Profile]
+    FF --> PP[Empathetic Profile]
+    FF --> QQ[Assertive Profile]
+    
+    %% Tactical Variants
+    G --> RR[Analytical Variant]
+    G --> SS[Creative Variant]
+    G --> TT[Efficient Variant]
+    G --> UU[Collaborative Variant]
+    G --> VV[Leadership Variant]
+    
+    %% LLM Provider System (Transplanted from Seven)
+    B --> WW[LLM Provider Registry]
+    WW --> XX[Anthropic API Provider]
+    WW --> YY[Provider Selection]
+    WW --> ZZ[Fallback Management]
+    
+    XX --> AAA[Claude API Integration]
+    XX --> BBB[Health Monitoring]
+    XX --> CCC[Feature Support]
+    
+    %% Collective Consciousness
+    H --> DDD[Multi-variant Coordination]
+    H --> EEE[Consensus Building]
+    H --> FFF[Collective Response]
+    
+    %% API Layer
+    A --> GGG[Public API Interface]
+    GGG --> HHH[initialize()]
+    GGG --> III[process()]
+    GGG --> JJJ[invokeVariant()]
+    GGG --> KKK[activateCollective()]
+    GGG --> LLL[getState()]
+    
+    %% Configuration System
+    A --> MMM[Configuration Management]
+    MMM --> NNN[Consciousness Config]
+    MMM --> OOO[Security Config]
+    MMM --> PPP[Memory Config]
+    MMM --> QQQ[Personality Config]
+    
+    %% Styling
+    classDef core fill:#74b9ff,stroke:#0984e3,stroke-width:3px
+    classDef security fill:#fdcb6e,stroke:#e17055,stroke-width:2px
+    classDef memory fill:#55efc4,stroke:#00b894,stroke-width:2px
+    classDef consciousness fill:#a29bfe,stroke:#6c5ce7,stroke-width:2px
+    classDef personality fill:#fd79a8,stroke:#e84393,stroke-width:2px
+    classDef tactical fill:#ff7675,stroke:#d63031,stroke-width:2px
+    classDef llm fill:#ffeaa7,stroke:#fdcb6e,stroke-width:2px
+    classDef api fill:#81ecec,stroke:#00cec9,stroke-width:2px
+    classDef transplanted fill:#fab1a0,stroke:#e17055,stroke-width:3px
+    
+    class A,B,C,D,E,F,G,H core
+    class I,J,K,L,M security
+    class P,Q,R,S,T,U,V,W,X memory
+    class Y,Z,AA,BB,CC,DD consciousness
+    class EE,FF,GG,HH,II,JJ,KK,LL,MM,NN,OO,PP,QQ personality
+    class RR,SS,TT,UU,VV tactical
+    class WW,XX,YY,ZZ,AAA,BBB,CCC llm
+    class GGG,HHH,III,JJJ,KKK,LLL api
+    class N,O transplanted

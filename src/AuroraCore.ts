@@ -9,6 +9,8 @@ import { MemoryEngine } from './memory/MemoryEngine';
 import { TacticalVariants } from './tactical/TacticalVariants';
 import { CollectiveConsciousness } from './collective/CollectiveConsciousness';
 import { SecurityFramework } from './security/SecurityFramework';
+import { auroraLLMRegistry } from './llm/LLMProvider';
+import { AnthropicAPIProvider } from './llm/providers/anthropic-api';
 import type { ConsciousnessConfig, AuroraResponse, AuroraState } from './types';
 
 export class AuroraCore {
@@ -51,6 +53,11 @@ export class AuroraCore {
     // Initialize security first
     await this.security.initialize();
     console.log('🛡️ Security framework initialized');
+
+    // Initialize LLM providers
+    const anthropicProvider = new AnthropicAPIProvider();
+    auroraLLMRegistry.registerProvider(anthropicProvider);
+    console.log('🧠 LLM provider registry initialized');
 
     // Initialize memory system
     await this.memory.initialize();
@@ -160,6 +167,20 @@ export class AuroraCore {
 
     this.initialized = false;
     console.log('✅ Aurora Core shutdown complete');
+  }
+
+  /**
+   * Check rate limit for authentication attempts (transplanted from Seven)
+   */
+  checkRateLimit(identifier: string, maxAttempts: number = 5, windowMs: number = 300000): boolean {
+    return this.security.checkRateLimit(identifier, maxAttempts, windowMs);
+  }
+
+  /**
+   * Validate session token (transplanted from Seven)
+   */
+  async validateSession(sessionToken: string | undefined, deviceId: string) {
+    return await this.security.validateSession(sessionToken, deviceId);
   }
 
   /**

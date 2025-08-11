@@ -1,0 +1,234 @@
+{
+  "repository": "aurora-core",
+  "audit_date": "2025-08-11T05:55:00Z",
+  "version": "1.0.0",
+  "modules": [
+    {
+      "name": "AuroraCore",
+      "path": "src/AuroraCore.ts",
+      "purpose": "Main consciousness orchestration system",
+      "api_type": "public",
+      "dependencies": ["ConsciousnessEngine", "MemoryEngine", "SecurityFramework"],
+      "tests": ["npm test"],
+      "security_critical": false
+    },
+    {
+      "name": "ConsciousnessEngine",
+      "path": "src/core/ConsciousnessEngine.ts",
+      "purpose": "Adaptive consciousness processing",
+      "api_type": "public",
+      "dependencies": ["MemoryEngine", "PersonalityMiddleware"],
+      "tests": ["examples/consciousness-test.ts"],
+      "security_critical": false
+    },
+    {
+      "name": "SecurityFramework", 
+      "path": "src/security/SecurityFramework.ts",
+      "purpose": "Production security framework",
+      "api_type": "public",
+      "dependencies": ["rateLimit", "sessionIntegrity"],
+      "tests": [],
+      "security_critical": true
+    },
+    {
+      "name": "MemoryEngine",
+      "path": "src/memory/MemoryEngine.ts", 
+      "purpose": "File-based memory persistence",
+      "api_type": "public",
+      "dependencies": [],
+      "tests": ["examples/memory-test.ts"],
+      "security_critical": false
+    },
+    {
+      "name": "TacticalVariants",
+      "path": "src/tactical/TacticalVariants.ts",
+      "purpose": "Specialized response modes",
+      "api_type": "public",
+      "dependencies": ["ConsciousnessEngine"],
+      "tests": [],
+      "security_critical": false
+    },
+    {
+      "name": "PersonalityMiddleware",
+      "path": "src/middleware/PersonalityMiddleware.ts",
+      "purpose": "Personality development and adaptation",
+      "api_type": "public", 
+      "dependencies": [],
+      "tests": ["examples/personality-test.ts"],
+      "security_critical": false
+    },
+    {
+      "name": "RateLimit",
+      "path": "src/auth/rateLimit.ts",
+      "purpose": "Authentication rate limiting (transplanted from Seven)",
+      "api_type": "public",
+      "dependencies": [],
+      "tests": [],
+      "security_critical": true
+    },
+    {
+      "name": "SessionIntegrity", 
+      "path": "src/auth/sessionIntegrity.ts",
+      "purpose": "HMAC session validation (transplanted from Seven)",
+      "api_type": "public",
+      "dependencies": ["crypto"],
+      "tests": [],
+      "security_critical": true
+    },
+    {
+      "name": "LLM Provider Registry",
+      "path": "src/llm/LLMProvider.ts",
+      "purpose": "LLM provider management (transplanted from Seven)",
+      "api_type": "public",
+      "dependencies": [],
+      "tests": [],
+      "security_critical": false
+    },
+    {
+      "name": "Anthropic API Provider",
+      "path": "src/llm/providers/anthropic-api.ts", 
+      "purpose": "Anthropic Claude integration (transplanted from Seven)",
+      "api_type": "public",
+      "dependencies": ["axios"],
+      "tests": [],
+      "security_critical": false
+    }
+  ],
+  "cli": [
+    {
+      "command": "npm run build",
+      "synopsis": "TypeScript compilation",
+      "options": [],
+      "examples": ["npm run build"]
+    },
+    {
+      "command": "npm run dev",
+      "synopsis": "Development mode",
+      "options": [],
+      "examples": ["npm run dev"]
+    },
+    {
+      "command": "npm run start",
+      "synopsis": "Production start",
+      "options": [],
+      "examples": ["npm run start"]
+    },
+    {
+      "command": "npm test",
+      "synopsis": "Test execution",
+      "options": [],
+      "examples": ["npm test"]
+    },
+    {
+      "command": "npm run cli",
+      "synopsis": "CLI interface",
+      "options": [],
+      "examples": ["npm run cli"]
+    },
+    {
+      "command": "npm run aurora-cli",
+      "synopsis": "Aurora CLI wrapper",
+      "options": [],
+      "examples": ["npm run aurora-cli"]
+    },
+    {
+      "command": "npm run capability-sweep",
+      "synopsis": "System capability assessment",
+      "options": [],
+      "examples": ["npm run capability-sweep"]
+    },
+    {
+      "command": "npm run metrics:offline",
+      "synopsis": "Offline metrics collection",
+      "options": [],
+      "examples": ["npm run metrics:offline"]
+    }
+  ],
+  "security": {
+    "controls": [
+      {
+        "control": "Input Validation",
+        "repo": "aurora-core",
+        "code_refs": ["src/security/SecurityFramework.ts:45-80"],
+        "tests": []
+      },
+      {
+        "control": "Rate Limiting",
+        "repo": "aurora-core", 
+        "code_refs": ["src/auth/rateLimit.ts:1-50"],
+        "tests": []
+      },
+      {
+        "control": "Session Management",
+        "repo": "aurora-core",
+        "code_refs": ["src/auth/sessionIntegrity.ts:1-100"],
+        "tests": []
+      },
+      {
+        "control": "Trust Level Management",
+        "repo": "aurora-core",
+        "code_refs": ["src/security/SecurityFramework.ts:120-150"],
+        "tests": []
+      }
+    ]
+  },
+  "providers": [
+    {
+      "name": "Anthropic Claude API",
+      "keys_required": ["ANTHROPIC_API_KEY"],
+      "fallback_policy": "registry_fallback",
+      "limits": "api_rate_limits"
+    }
+  ],
+  "memory": [
+    {
+      "schema_version": "v1.0",
+      "store": "file_based_jsonl",
+      "counts": {
+        "active_memories": "configurable",
+        "compressed_memories": "automatic"
+      },
+      "avg_latency": "10-30ms",
+      "integrity_checks": [
+        "index_consistency_validation",
+        "compression_safety_checks",
+        "json_format_validation"
+      ]
+    }
+  ],
+  "builds": [
+    {
+      "target": "nodejs_application",
+      "steps": ["tsc_build"],
+      "artifacts": ["dist/"],
+      "sizes": "~1-5MB",
+      "signing": "none"
+    }
+  ],
+  "risks": [
+    {
+      "id": "AURORA-RISK-001",
+      "severity": "MEDIUM",
+      "likelihood": "MEDIUM", 
+      "description": "Rate limiting only in memory (lost on restart)",
+      "remediation": "Implement persistent rate limiting",
+      "owner": "security_team"
+    },
+    {
+      "id": "AURORA-RISK-002",
+      "severity": "MEDIUM",
+      "likelihood": "LOW",
+      "description": "Basic threat detection patterns",
+      "remediation": "Implement advanced ML-based threat detection",
+      "owner": "security_team"  
+    },
+    {
+      "id": "AURORA-RISK-003",
+      "severity": "LOW",
+      "likelihood": "LOW",
+      "description": "15-minute session TTL may be permissive",
+      "remediation": "Implement configurable session timeouts",
+      "owner": "auth_team"
+    }
+  ]
+}

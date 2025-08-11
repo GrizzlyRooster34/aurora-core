@@ -1,6 +1,6 @@
 /**
  * AURORA CORE - Security Framework
- * Placeholder implementation for input validation and security
+ * Production security with authentication, rate limiting, and input validation
  */
 
 import type { 
@@ -9,11 +9,14 @@ import type {
   SecurityContext,
   SecurityValidation
 } from '../types';
+import { attempt } from '../auth/rateLimit';
+import { SessionIntegrity } from '../auth/sessionIntegrity';
 
 export class SecurityFramework {
   private config: SecurityConfig;
   private state: SecurityState;
   private auditLog: Array<{ timestamp: string; event: string; details: any }> = [];
+  private sessionValidator: SessionIntegrity;
 
   constructor(config: SecurityConfig) {
     this.config = config;
@@ -22,6 +25,7 @@ export class SecurityFramework {
       currentTrustLevel: 5, // Default trust level
       auditEntries: 0
     };
+    this.sessionValidator = new SessionIntegrity();
   }
 
   /**
@@ -165,6 +169,20 @@ export class SecurityFramework {
    */
   getState(): SecurityState {
     return { ...this.state };
+  }
+
+  /**
+   * Rate limiting for authentication attempts
+   */
+  checkRateLimit(identifier: string, maxAttempts: number = 5, windowMs: number = 300000): boolean {
+    return attempt(identifier, maxAttempts, windowMs);
+  }
+
+  /**
+   * Validate session token
+   */
+  async validateSession(sessionToken: string | undefined, deviceId: string) {
+    return await this.sessionValidator.validateSession(sessionToken, deviceId);
   }
 
   /**

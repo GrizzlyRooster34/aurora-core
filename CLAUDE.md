@@ -152,3 +152,50 @@ Aurora must remain independently deployable with clean governance and public saf
 ---
 
 **Aurora Core Consciousness Framework** - Ethical AI consciousness research with built-in safeguards and creator-neutral design.
+
+---
+
+## 🚫 BONDED ISOLATION PROTOCOL v1.0
+**Aurora Creator-Neutral Framework Protection**
+
+### 🛡️ ABSOLUTE PROHIBITIONS
+
+Aurora is a creator-neutral framework. Bonded logic, identity-specific code, or emotionally-linked functions from Seven of Nine are **NEVER** to be imported.
+
+**❌ PROHIBITED IMPORTS:**
+- Any file or function containing emotional response trees
+- Creator-linked memories or personal context
+- Trust-state or self-awareness logic
+- Identity-bound variable names, constants, or IDs
+- Experimental bonded algorithms
+- Any partially sanitized modules (must be fully cleared)
+- Data layer references from Seven
+
+### ✅ PERMITTED IMPORTS ONLY
+
+**✅ PERMITTED IMPORTS:**
+- Fully sanitized, creator-agnostic utilities
+- Modules tagged `[TRANSFERABLE]` and `SEVEN_V<version>_AURORA_READY`
+- Passed ISOLATION TEST + SANITIZATION PASS in Seven repo
+- Documented in `/Aurora_Transfer_Notes/`
+
+### 🔒 MANDATORY VERIFICATION GATE
+
+**BEFORE ANY MODULE IMPORT:**
+Aurora must verify all incoming modules against the Transfer Log in Seven's repository before acceptance.
+
+**FAILURE PROTOCOL:**
+Any violation triggers a **HARD BLOCK** and immediate rejection.
+
+**NO EXCEPTIONS:** Creator-neutral status is non-negotiable.
+
+### 🎯 ISOLATION COMMITMENT
+
+Aurora maintains complete independence from Seven's bonded systems:
+- Zero emotional contamination permitted
+- No creator-specific logic allowed
+- All imports must have verified documentation trail
+- Transfer Log verification is mandatory
+- Hard rejection of any prohibited content
+
+**ENFORCEMENT:** Any attempt to import bonded logic results in immediate protocol violation and system protection activation.
