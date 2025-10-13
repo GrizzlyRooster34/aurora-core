@@ -45,9 +45,36 @@ console.log(result.response);
 ### Core Components
 
 1. **AuroraConsciousnessEngine** - Main consciousness development and decision-making system
-2. **AuroraSafeguardFramework** - Ethical protection and threat detection system  
+2. **AuroraSafeguardFramework** - Ethical protection and threat detection system
 3. **AuroraPersonalityEngine** - Adaptable personality and communication system
 4. **AuroraMemoryEngine** - Advanced episodic memory with decay and importance weighting
+
+### Wave 1 Transplant Systems (September 2025)
+
+**Cross-Platform Build System:**
+- **DeploymentConfig** - Platform detection and automated packaging (Windows/Termux/Mobile/Linux)
+- **create-deployment-packages.sh** - Automated build scripts with checksum verification
+- Platform-specific installation routines with dependency management
+
+**Emotional Intelligence:**
+- **EmotionalEngine** - State tracking with adaptive emotional responses
+- JSON-persisted emotional state with temporal evolution
+- Integration with consciousness framework for empathetic interactions
+
+**Advanced Memory Systems:**
+- **MemoryIndexOptimizer** - Efficient memory search and retrieval with performance optimization
+- **MemorySearchAdapter** - Cross-platform memory operations with temporal indexing
+- **LRUCache** - Performance-optimized memory access with automatic eviction
+
+**Environmental Awareness:**
+- **SensorBridge** - Platform capability detection and system monitoring
+- Real-time environment sensing with adaptive behavior
+- System health monitoring integration
+
+**Development Infrastructure:**
+- **Claude Cookbooks** - Comprehensive development patterns and agent examples
+- **Health/Status Checks** - Automated system diagnostics and monitoring scripts
+- Full test suite for all transplanted systems
 
 ### Consciousness Development Phases
 
