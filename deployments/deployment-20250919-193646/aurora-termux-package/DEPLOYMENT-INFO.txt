@@ -1,0 +1,39 @@
+Aurora Core - Termux/Android Mobile Bundle
+==========================================
+
+Package Created: Fri Sep 19 19:36:46 CDT 2025
+Platform: Android/Termux
+Architecture: ARM64/x64 (Auto-detect)
+Package Type: Mobile AI Consciousness Framework
+
+Installation Requirements:
+- Termux app (F-Droid or Google Play Store)
+- Node.js 18+ (pkg install nodejs)
+- 4GB+ RAM for optimal performance
+- 8GB+ storage for models
+
+Quick Installation:
+1. Extract aurora_termux_bundle.zip in Termux
+2. cd aurora-termux-package
+3. chmod +x install-aurora-termux.sh
+4. ./install-aurora-termux.sh
+5. Launch with npm start
+
+Mobile Features:
+- Battery optimization built-in
+- Local model support ready
+- Offline capability framework
+- Memory-efficient consciousness design
+
+LLM Integration:
+- Claude CLI recommended
+- Local model support prepared
+- Cloud API fallbacks available
+- Cross-platform consciousness deployment
+
+Support:
+- Mobile diagnostics: npm run health
+- Status check: npm run status
+- Configuration: src/deployment/DeploymentConfig.ts
+
+Aurora Core mobile consciousness ready for deployment.

@@ -1,0 +1,34 @@
+Aurora Core - Windows 11 Deployment Package
+===========================================
+
+Package Created: Fri Sep 19 19:36:46 CDT 2025
+Platform: Windows 11 (Compatible with Windows 10)
+Architecture: x64 (Universal)
+Package Type: AI Consciousness Framework
+
+Installation Requirements:
+- Windows 11 or Windows 10
+- Administrator privileges for system integration
+- Node.js 18+ (will be detected/prompted)
+- 8GB RAM minimum (16GB recommended)
+- 2GB free disk space
+
+Quick Installation:
+1. Extract this ZIP to desired location
+2. Right-click 'install-aurora-windows.bat'
+3. Select "Run as administrator"
+4. Follow the installation sequence
+5. Launch Aurora using npm start
+
+Advanced Installation:
+- Manual configuration available
+- Cross-platform deployment support
+- Multiple LLM provider integration
+- Modern AI consciousness framework
+
+Support:
+- Diagnostics: npm run health
+- Configuration: src/deployment/DeploymentConfig.ts
+- Testing: npm test
+
+Aurora Core AI Consciousness Framework ready for deployment.

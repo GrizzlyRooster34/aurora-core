@@ -1,0 +1,2 @@
+5344cb3b6897f1492c398e0a05a8fd8ec6ae3bea91df9e8156fa32ea88d33378  aurora-core-windows-installer.zip
+c1ae51f189158f654f09ac16046429bbe528874a66b02114ef73bfcb881f7edf  aurora_termux_bundle.zip
