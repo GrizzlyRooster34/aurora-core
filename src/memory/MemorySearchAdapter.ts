@@ -1,5 +1,5 @@
 // SQLite + Native memory search adapter (with TS fallback)
-const { spawnSync } = require('child_process');
+import { spawnSync } from 'child_process';
 
 /**
  * Aurora Core - Memory Search Adapter
@@ -11,10 +11,16 @@ const { spawnSync } = require('child_process');
  */
 
 let native: any = null;
+// Try to load optional native module for memory acceleration
 try {
-  native = require('../../native-core/memory-engine/build/Release/memory_engine.node');
+  // Dynamic require fallback for CommonJS compatibility during async load
+  const nodeRequire = typeof require !== 'undefined' ? require : null;
+  if (nodeRequire) {
+    native = nodeRequire('../../native-core/memory-engine/build/Release/memory_engine.node');
+  }
 } catch {
   // Native module not available - will use TS fallback
+  native = null;
 }
 
 export interface MemoryQuery {
@@ -108,7 +114,7 @@ class SQLiteMemoryAdapter {
   // Aurora-specific methods for memory management
   getMemoryStats(): { total: number; indexed: number; nativeAcceleration: boolean } {
     const statsQuery = 'SELECT COUNT(*) as total FROM episodic_memories';
-    const result = this.query(statsQuery);
+    const result = this.query(statsQuery) as unknown as { total: number }[];
     return {
       total: result[0]?.total || 0,
       indexed: result[0]?.total || 0, // For Aurora, all memories are indexed

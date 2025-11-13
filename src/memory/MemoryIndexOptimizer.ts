@@ -535,3 +535,6 @@ export function createIndex(
     builtAt: Date.now()
   };
 }
+
+// Re-export CacheStats for proper type export chain
+export type { CacheStats } from './LRUCache';
